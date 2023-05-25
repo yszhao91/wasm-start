@@ -1,0 +1,19 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "D:/emsdk/upstream/emscripten/system/include",
+                "D:/emsdk/upstream/emscripten/system/include/compat",
+                "D:/emsdk/upstream/emscripten/system/lib/libcxx/include/"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "cppStandard": "c++11"
+        }
+    ],
+    "version": 4
+}

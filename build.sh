@@ -12,6 +12,10 @@ fi
 emcc -O3 \
 main.cpp test.cc \
 -o  ./bin/terrain.js
+ 
+sed -Ei 's/terrain.wasm/bin\/terrain.wasm/g' bin/terrain.js
+echo 'let accept, reject;const p = new Promise((a, r) => {  accept = a;  reject = r;});Module.postRun = () => {  accept();};Module.waitForLoad = () => p;run();export default Module;' >> ./bin/terrain.js
+echo done
 
 echo done
 sleep 10000

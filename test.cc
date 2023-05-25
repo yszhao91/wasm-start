@@ -1,4 +1,4 @@
-#include <emscripten.h>
+#include <emscripten/emscripten.h>
 
 EMSCRIPTEN_KEEPALIVE int doSubTest1(int a, int b)
 {
